@@ -1,7 +1,11 @@
 # react-native-expo-using-native-with-rust
 
-![GitHub License](https://img.shields.io/github/license/alk-neq-me/react-native-expo-using-native-with-rust/)
-![GitHub Stars](https://img.shields.io/github/stars/alk-neq-me/react-native-expo-using-native-with-rust/)
+![1 photo](./_doc/1.jpg)
+![2 photo](./_doc/2.jpg)
+
+[![GitHub license](https://img.shields.io/github/license/alk-neq-me/react-native-expo-using-native-with-rust.svg?style=for-the-badge)](https://github.com/alk-neq-me/react-native-expo-using-native-with-rust/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/alk-neq-me/react-native-expo-using-native-with-rust.svg?style=for-the-badge)](https://github.com/alk-neq-me/react-native-expo-using-native-with-rust/stargazers)
+
 
 Welcome to the **React Native Expo using Native with Rust** project! In this repository, we explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.
 
