@@ -5,35 +5,43 @@ package com.marco.flat;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+// import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.Promise;
 
 public class HelloJavaModule extends ReactContextBaseJavaModule {
   static {
-    System.loadLibrary("crab");
+    System.loadLibrary("flat");
   }
 
-  public static native String rusty_crab();
+  public static native String rusty_fn(String name);
+
+  public static native String counvertKrToRo(String kr);
 
   public HelloJavaModule(ReactApplicationContext reactContext) {
     super(reactContext);
   }
 
-  // public static native void rusty_print();
-
   @Override
   public String getName() {
-    return "HelloJava";
+    return "HelloJavaModule";
   }
 
   @ReactMethod
-  public void sayHello(String name, Callback callback) {
+  public void sayHello(String name, Promise promise) {
     // Log.d("HelloJava", "Hello");
     try {
-      // String msg = "Hello " + name + " " + "from java";
-      // rusty_crab();
-      callback.invoke(null, "gg");
+      promise.resolve(rusty_fn(name));
     } catch (Exception e) {
-      callback.invoke(e, null);
+      promise.reject("Error: failed proise", e);
+    }
+  }
+
+  @ReactMethod
+  public void convertKrToRoAsync(String kr, Promise promise) {
+    try {
+      promise.resolve(counvertKrToRo(kr));
+    } catch (Exception e) {
+      promise.reject("Error: failed proise", e);
     }
   }
 }

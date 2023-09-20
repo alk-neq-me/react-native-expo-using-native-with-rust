@@ -1,2 +1,0 @@
-[target.aarch64-linux-android]
-linker = "/home/marco/Android/android-ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android24-clang"

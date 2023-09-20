@@ -1,0 +1,12 @@
+/home/marco/marco/tuto/flat/rust/flat/target/i686-linux-android/release/deps/combine-ea6f219151c32a8b.rmeta: /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/lib.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/primitives.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/combinator.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/range.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/byte.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/char.rs
+
+/home/marco/marco/tuto/flat/rust/flat/target/i686-linux-android/release/deps/libcombine-ea6f219151c32a8b.rlib: /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/lib.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/primitives.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/combinator.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/range.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/byte.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/char.rs
+
+/home/marco/marco/tuto/flat/rust/flat/target/i686-linux-android/release/deps/combine-ea6f219151c32a8b.d: /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/lib.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/primitives.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/combinator.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/range.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/byte.rs /home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/char.rs
+
+/home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/lib.rs:
+/home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/primitives.rs:
+/home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/combinator.rs:
+/home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/range.rs:
+/home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/byte.rs:
+/home/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/combine-2.5.2/src/char.rs:
