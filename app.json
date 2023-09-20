@@ -11,6 +11,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "developer": {
+      "name": "Aung Koko Lwin",
+      "url": "https://marco-exexx.vercel.app/"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],

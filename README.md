@@ -1,7 +1,7 @@
 # react-native-expo-using-native-with-rust
 
-![GitHub License](https://img.shields.io/github/license/alk-neq-me/react-native-expo-using-native-with-rust)
-![GitHub Stars](https://img.shields.io/github/stars/alk-neq-me/react-native-expo-using-native-with-rust)
+![GitHub License](https://img.shields.io/github/license/alk-neq-me/react-native-expo-using-native-with-rust/)
+![GitHub Stars](https://img.shields.io/github/stars/alk-neq-me/react-native-expo-using-native-with-rust/)
 
 Welcome to the **React Native Expo using Native with Rust** project! In this repository, we explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.
 
@@ -37,7 +37,7 @@ Before you get started, make sure you have the following prerequisites:
 4. Build the Rust library for the target architecture (e.g., aarch64):
 
    ```bash
-   cd rust/crab/
+   cd rust/flat/
    sh build.sh
    ```
 
@@ -59,7 +59,7 @@ Before you get started, make sure you have the following prerequisites:
 
 The main purpose of this project is to demonstrate how to use a Rust native module within a React Native Expo app. To integrate your Rust code, you can follow these steps:
 
-1. Create or modify your Rust code in the `rust/crab/` directory.
+1. Create or modify your Rust code in the `rust/flat/` directory.
 2. Build the Rust library for the target architecture using `cargo build`.
 3. Update the `config` file for custom linker settings if necessary (inside `.cargo`).
 4. Import and use your Rust module in your React Native component.
