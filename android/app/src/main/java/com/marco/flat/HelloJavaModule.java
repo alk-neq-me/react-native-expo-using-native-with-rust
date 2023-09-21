@@ -1,11 +1,11 @@
 package com.marco.flat;
 
-// import android.util.Log;
+import android.content.Context;
+import android.widget.Toast;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-// import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 
 public class HelloJavaModule extends ReactContextBaseJavaModule {
@@ -28,7 +28,6 @@ public class HelloJavaModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void sayHello(String name, Promise promise) {
-    // Log.d("HelloJava", "Hello");
     try {
       promise.resolve(rusty_fn(name));
     } catch (Exception e) {
@@ -43,5 +42,10 @@ public class HelloJavaModule extends ReactContextBaseJavaModule {
     } catch (Exception e) {
       promise.reject("Error: failed proise", e);
     }
+  }
+
+  @ReactMethod
+  public void showToast(String message) {
+    Toast.makeText(getReactApplicationContext(), message, Toast.LENGTH_SHORT).show();
   }
 }

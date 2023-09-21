@@ -1,16 +1,17 @@
-import { View, Text, StyleSheet, TextInput, Button, ToastAndroid } from "react-native";
+import { View, Text, StyleSheet, TextInput, Button } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useState } from "react";
 import * as Clipboard from 'expo-clipboard'
 
-import ConverterModule from "../utils/native_module";
+import { ConverterModule, TextToSpeach } from "../utils/native_module";
+
+const { convertKrToRoAsync, showToast } = ConverterModule
+const { speak, setLanguage } = TextToSpeach
 
 export function Conveter() {
   const insets = useSafeAreaInsets()
   const [krText, setKrText] = useState("")
   const [roText, setRoText] = useState("")
-
-  const { convertKrToRoAsync } = ConverterModule
 
   const handleConvert = () => {
     convertKrToRoAsync(krText)
@@ -21,10 +22,20 @@ export function Conveter() {
   const handleCopy = async () => {
     try {
       await Clipboard.setStringAsync(roText)
-      ToastAndroid.show("Copy text successfully 🦀", ToastAndroid.SHORT)
+      showToast("Copy text successfully 🦀")
     } catch (err: any) {
       let msg = err?.message ?? "unknown error"
-      ToastAndroid.show(`Copy text failed: ${msg}`, ToastAndroid.SHORT)
+      showToast(`Copy text failed: ${msg}`)
+    }
+  }
+
+  const handleSound = async () => {
+    try {
+      await setLanguage("ko-KR").then(console.log).catch(console.error)
+      await speak(krText).then(console.log).catch(console.error)
+    } catch (err: any) {
+      let msg = err?.message ?? "unknown error"
+      showToast(`sound text failed: ${msg}`)
     }
   }
 
@@ -63,13 +74,27 @@ export function Conveter() {
         onPress={handleConvert}
       />
 
-      {roText ? 
+      <View
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "flex-end",
+          flexDirection: "row",
+          gap: 5
+        }}
+      >
         <Button
-          title="Copy"
-          color="pink"
-          onPress={handleCopy}
-        /> : null
-      }
+          title="Sound"
+          onPress={handleSound}
+        />
+        {roText ? 
+          <Button
+            title="Copy"
+            color="pink"
+            onPress={handleCopy}
+          /> : null
+        }
+      </View>
     </View>
 
     <Text style={styles.footer}>
