@@ -51,7 +51,6 @@ export function Conveter() {
           editable
           multiline
           numberOfLines={4}
-          maxLength={40}
           placeholder="Korean"
           style={styles.input}
           onChangeText={setKrText}
@@ -61,7 +60,6 @@ export function Conveter() {
           editable
           multiline
           numberOfLines={4}
-          maxLength={40}
           placeholder="Romaji"
           style={styles.input}
           onChangeText={setRoText}
